@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+}
+.card {
+  min-height: 50vh;
+  max-width: 90vw;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: #101820;
+  margin: auto;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 70%;
+  border: none;
+  outline: none;
+  background-color: #ebfffe;
+  color: #555;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+input::placeholder {
+  color: #e72d00;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #f0edcc;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #78f57e 0%, #037403 100%);
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%),
+    inset 0px -3px 0px rgb(58 65 111 / 50%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #f0edcc;
+  color: #d6ed17;
+  height: 60 px;
+  border-radius: 30px;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: inset 0px 3px 7px #3c4fe0;
+  transform: translateY(2px);
+}
+
+.weatherData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #00539c;
+}
+
+#temp {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #07553b;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h5 {
+  margin-top: 20px;
+}
